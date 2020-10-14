@@ -44,7 +44,7 @@ info:
 ---
 
 server:
-  port: 1002
+  port: 1003
 spring:
   profiles:
     active: test
@@ -73,7 +73,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka #Eureka注册服务中心地址（microservicecloud-eureka-7001->application.yml:service-url:defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/） 单机版
   instance:
-    instance-id: ask-prodiver-1001-hystrix #自定义服务器名称，为服务器起别名,hystrix:携带服务熔断功能
+    instance-id: ask-prodiver-1003-hystrix #自定义服务器名称，为服务器起别名,hystrix:携带服务熔断功能
     prefer-ip-address: true #访问路径可以显示IP地址
 
 info:
